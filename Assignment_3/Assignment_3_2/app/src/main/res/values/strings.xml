@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment_3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_server_database">server_database</string>
+    <string name="title_activity_server_db_activity">server_db_activity</string>
+    <string name="sorting">Sorting:</string>
+    <string-array name="sort">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+</resources>
+

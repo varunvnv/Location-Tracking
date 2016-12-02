@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.varun.LocationTracking.QueryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Server Database"
+            android:gravity="center"
+            android:background="@drawable/backgroundedittextbox"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/server_db_list"
+            android:layout_weight="1"
+            android:background="@drawable/backgroundedittextbox"
+            android:layout_marginTop="5dp"></ListView>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net ID:"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundedittextbox"
+                android:id="@+id/netid"
+                android:text=""
+                android:layout_marginLeft="20dp"/>
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sorting:"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:entries="@array/sort"
+    android:background="@drawable/backgroundedittextbox"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/spinner"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/enter_button"/>
+    </LinearLayout>
+
+
+</FrameLayout>
